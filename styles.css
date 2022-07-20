@@ -49,6 +49,11 @@ h3{
     background: #DD0000;
     border-radius: 15px;
     margin-bottom: 20px;
+    margin-top: 10px;
+    padding: 10px;
+}
+.btn:hover{
+    transform: scale(1,2);
 }
 /* .player-img  img{
     width: 581px;
@@ -92,10 +97,17 @@ h3{
     /* padding-top: 10px; */
     /* height: 64px; */
     
-    font-weight: 500;
+    font-weight: 600;
     font-size: 20px;
     padding: 10px 0;
 
+}
+.menu li a:hover{
+    font-size: 20px;
+    font-weight: 500;
+    background-color: royalblue;
+    color: black;
+    transition: 0.4s;
 }
 .blog-btn{
     width: 252px;
@@ -106,8 +118,16 @@ h3{
     font-family: 'Poppins';
     color: #161616;
     font-weight: 500;
-    font-size: 20px;
+    font-size: 25px;
     padding: 10px 0;
+    cursor: pointer;
+}
+
+.blog-btn:hover{
+    background-color: royalblue;
+    color: black;
+    /* font-size: 25px; */
+    transition: 0.4s;
 }
 .menu li.selected{
     /* display: block;
@@ -395,7 +415,7 @@ footer{
 }  
 
 .container .menu{
-    width: 100%;  
+    /* width: 100%;   */
     height: 282px;
     background: #f0e4e4;
     border-radius: 10px;
