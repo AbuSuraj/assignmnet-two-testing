@@ -6,14 +6,22 @@ h6{
 /*------------ Header-style------------------
 --------------------------------------------- */
 .top-banner{
-    width: 1321px;
-    height: 646px;
-    left: 140px;
-    top: 50px;
+    /* width: 1321px; */
+    /* height: 646px; */
     background-color:  #161616;
     border-radius: 30px;
     display: flex;
     margin-bottom: 130px;
+    margin-left: 140px;
+    margin-right: 140px;
+    margin-top: 50px;
+    align-items: center;
+    justify-content: space-between;
+}
+.top-banner .player-img img{
+    
+    width: 581px;
+    /* height: 100%; */
 }
 .half-width{
     width: 50%;  
@@ -26,10 +34,9 @@ h6{
 }
 .section-title h1{
     color:#FFFFFF;
-    
     font-style: normal;
     font-weight: 700;
-    font-size: 50px;
+    font-size: 70px;
 }
 .btn{
     font-family: 'Edu VIC WA NT Beginner';
@@ -39,23 +46,24 @@ h6{
     line-height: 23px;
     text-align: center;
     color: #FFFFFF;
-     background: #DD0000;
-    border-radius: 15px;;
+    background: #DD0000;
+    border-radius: 15px;
+    margin-bottom: 20px;
 }
-.player-img  img{
+
+/* .player-img  img{
     width: 581px;
     height: 613px;
     margin-right: 80px;
-}
+} */
 /*------------------ Transfer news and blog---------------
 ------------------------------------------------------ */
-  .container{
+/* .container{
     display: flex;
-     /*align-items: center; */
     flex-direction: row; 
 }  
 .menu{
-    width: 312px;  /**/
+    width: 312px;  
     height: 282px;
     background: #161616;
     border-radius: 10px;
@@ -64,12 +72,10 @@ h6{
 .menu a{
     text-decoration: none;
     text-align: center;
-    /* padding-top: 10px; */
 }
 .blog-btn{
     display: block;
     width: 252px;
-    /* height: 64px; */
     background: #FFFFFF;
     border-radius: 10px;
     margin: 30px;
@@ -82,7 +88,6 @@ h6{
 .blog-btn-red{
     display: block;
     width: 252px;
-    /* height: 64px; */
     background: #DD0000;
     border-radius: 10px;
     margin: 30px;
@@ -91,6 +96,71 @@ h6{
     font-weight: 600;
     font-size: 20px;
     padding: 10px 0;
+} */
+.container{
+    display: flex;
+     /*align-items: center; */
+    flex-direction: row; 
+    justify-content: center;
+    gap: 20px  ;
+}  
+
+.container .menu{
+    width: 312px;  /**/
+    height: 282px;
+    background: #161616;
+    border-radius: 10px;
+    /* margin-left: 03px; */
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.menu li{
+    list-style-type: none;
+    width: 200px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    
+}
+.menu li a{
+    
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    /* padding-top: 10px; */
+    /* height: 64px; */
+    
+    font-weight: 500;
+    font-size: 20px;
+    padding: 10px 0;
+
+}
+.blog-btn{
+    width: 252px;
+    /* height: 64px; */
+    background: #FFFFFF;
+    border-radius: 10px;
+    /* margin: 30px; */
+    font-family: 'Poppins';
+    color: #161616;
+    font-weight: 500;
+    font-size: 20px;
+    padding: 10px 0;
+}
+.menu li.selected{
+    /* display: block;
+    width: 252px; */
+    /* height: 64px; */
+    background-color: #DD0000;
+    /* border-radius: 10px; */
+    /* margin: 30px; */
+    /* color: #FFFFFF; */
+    /* font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 20px;
+    padding: 10px 0; */
 }
 .schedules{
     margin-left: 24px;
@@ -124,6 +194,7 @@ h6{
     margin-left: 25px;
     margin-right: 25px;
 }
+
 /* .transfer button{
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
@@ -146,6 +217,7 @@ footer{
     background-color: black;
     text-align: center;
     color: #FFFFFF;
+    width: 100%;
 }
 .footer-goal{
     font-family: 'Poppins';
@@ -159,8 +231,6 @@ hr{
     width: 95%;
 }
 footer .footer-nav{
-    
-    
    font-family: 'Cormorant SC', serif;
    font-style: normal;
    font-weight: 500;
@@ -169,14 +239,14 @@ footer .footer-nav{
 .footer-nav{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content:space-around;
 }
 footer .footer-nav ul li{
     list-style: none;
     display: inline-block;
     padding: 10px;
-    margin-left: 80px;
-    margin-bottom: 130px;
+    /* margin-left: 80px;
+    margin-bottom: 130px; */
 }
 footer .footer-nav ul li a{
     text-decoration: none;
@@ -189,7 +259,7 @@ footer .footer-nav ul li a{
     align-items: center;
     justify-content: center;
     font-weight: 500;
-    font-size: 56px;
+    font-size: 40px;
 }
 footer .social-media ul li{
     list-style: none;
@@ -201,4 +271,218 @@ footer .social-media ul li{
 footer .social-media ul li a{
     text-decoration: none;
     color: #b61818;
+}
+
+/* ----------------------------------------------------------------------- ---------------------Responsiveness ---------------------------*/
+                /*Tablet devices*/
+@media only screen and (min-width: 688px) and (max-width: 992px){
+  .top-banner{
+      /* width: 100%;  
+     height: 100%;  */
+     display: flex;
+     flex-direction: row; 
+     justify-content: center; 
+    align-items: flex-end;
+    gap: 20px; 
+    margin: 50px;
+}
+     /* .half-width{
+      width: 50%;
+     } */
+   /* .top-banner .section-title{
+      width: 316px;
+      height: 276px;
+  }  */
+   .top-banner .player-img img{
+      width: 100%;
+      height: 100%;
+  } 
+  .section-title h1{
+      font-size: 40px;
+  }
+ .container{
+          width:100%;
+      }
+  
+     .container{
+          display: flex;
+          flex-direction: column; 
+          justify-content: center;
+          gap: 20px  ;
+      }  
+      
+      .container .menu{
+          width: 100%;  
+          height: 82px;
+          background: #f0e4e4;
+          border-radius: 10px;
+          
+          display:flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          gap: 30px;
+      }
+    .menu li{
+          list-style-type: none;
+          width: 200px;
+          background: #FFFFFF;
+          border-radius: 10px;
+          
+      }
+.menu li a{
+          
+          display: block;
+          text-decoration: none;
+          text-align: center;
+          color:#161616;
+          font-weight: 500;
+          font-size: 20px;
+          padding: 10px 0;
+      
+      }
+.blog-btn{
+          width: 252px;
+          background: #FFFFFF;
+          border-radius: 10px;
+          font-family: 'Poppins';
+          color: #161616;
+          font-weight: 500;
+          font-size: 20px;
+          padding: 10px 0;
+      }
+      .menu li.selected{
+          background-color: #DD0000;
+         
+      }
+  .schedules{
+      /* 
+      gap */
+      width: 100%;
+      margin-bottom: 80px;
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      grid-row-gap:30px;
+      grid-column-gap:20px ;
+  }
+   .schedule{
+      align-items: center;
+      color: #161616;
+      box-shadow: 0px 5.34229px 13.3557px rgba(0, 0, 0, 0.05);
+       border: 1px solid rgb(248, 238, 238);
+       border-radius: 10px;
+       width: 257px;
+       height: 255px;
+  } 
+  .schedule img{
+      width: 30%;
+      height: 30%;
+  }
+  
+  footer{
+      width: 100%;
+  }
+}
+  
+                  /* Mobile Device  */
+  @media only screen and (max-width: 687px){
+     .top-banner{
+       width: 100%;  
+      height: 100%; 
+      display: flex;
+       flex-direction: column; 
+       justify-content: center; 
+        align-items: center;
+       gap: 20px; 
+        }
+     .top-banner .player-img img{
+        width: 233px;
+        height: 245px;
+    } 
+    .section-title h1{
+        font-size: 22px;
+        text-align: center;
+    }
+.container{
+    width:100%;
+   display: flex; 
+   flex-direction: column; 
+   justify-content: center;
+   align-items: center;
+   gap: 20px  ;
+   }   
+        
+.container .menu{
+    width: 100%;  
+    height: 282px;
+    background: #f0e4e4;
+    border-radius: 10px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.menu li{
+    list-style-type: none;
+    width: 200px;
+    background: #FFFFFF;
+    border-radius: 10px; 
+}
+.menu li a{
+    
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    color:#161616;
+    font-weight: 500;
+    font-size: 20px;
+    padding: 10px 0;
+
+}
+.blog-btn{
+    width: 252px;
+    
+    background: #FFFFFF;
+    border-radius: 10px;
+    
+    font-family: 'Poppins';
+    color: #161616;
+    font-weight: 500;
+    font-size: 20px;
+    padding: 10px 0;
+}
+.menu li.selected{
+    background-color: #DD0000;
+   
+}
+.schedules{
+    margin-bottom: 80px;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-row-gap:30px;
+    grid-column-gap:20px ;
+}
+ .schedule{
+    align-items: center;
+    color: #161616;
+    box-shadow: 0px 5.34229px 13.3557px rgba(0, 0, 0, 0.05);
+     border: 1px solid rgb(248, 238, 238);
+     border-radius: 10px;
+     width: 357px;
+     height: 415px;
+} 
+.schedule img{
+    width: 40%;
+    height: 40%;
+}
+
+footer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+ }
+footer .footer-nav ul li{
+    display: block;     
+    }
 }
